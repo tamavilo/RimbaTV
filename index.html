@@ -863,7 +863,7 @@
 
                        <div data-sheetdb-url="https://sheetdb.io/api/v1/o4g2l4va2yu5c">
 
-                            <a onclick="go('{{link}}');">
+                            <a id="serverid" class="btn" onclick="go('{{link}}');">
 
                                 <div class="kotak">
                                     <div class="jam">
@@ -897,18 +897,17 @@
                    <script src="https://sheetdb.io/handlebars.js"></script>
 <script>
     //<![CDATA[
-    function go(loc) {
-        document.getElementById('tv').src = loc;
-    };
-    var btnContainer = document.getElementById("serverid");
-    var btns = btnContainer.getElementsByClassName("btn");
-    for (var i = 0; i < btns.length; i++) {
-        btns[i].addEventListener("click", function () {
-            var current = document.getElementsByClassName("active");
-            current[0].className = current[0].className.replace(" active", "");
-            this.className += " active";
-        });
-    }
+    function go(loc) {  document.getElementById('tv').src = loc;
+  };
+  var btnContainer = document.getElementById("serverid");
+  var btns = btnContainer.getElementsByClassName("btn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    });
+  }
     //]]>
 </script>
                     <br>
