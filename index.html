@@ -29,7 +29,7 @@
     <link rel="apple-touch-icon" sizes="180x180"
         href="https://cdn.jsdelivr.net/gh/iwantama2/style.css@main/icon_mistartv.png">
     <link rel="icon" type="image/png" sizes="192x192"
-        href="https://cdn.jsdelivr.net/gh/iwantama2/style.css@main/icon_mistartv.png">
+        href="https://cdn.jsdelivr.net/gh/iwantama2/style.css@main/icon_.png">
     <link rel="icon" type="image/png" sizes="32x32"
         href="https://cdn.jsdelivr.net/gh/iwantama2/style.css@main/icon_mistartv.png">
     <link rel="icon" type="image/png" sizes="96x96"
@@ -746,22 +746,7 @@
 </script>
 <script src='https://cdn.jsdelivr.net/npm/sweetalert2@10'></script>
 
-<script>
-    //<![CDATA[
-    function go(loc) {
-        document.getElementById('tv').src = loc;
-    };
-    var btnContainer = document.getElementById("serverid");
-    var btns = btnContainer.getElementsByClassName("btn");
-    for (var i = 0; i < btns.length; i++) {
-        btns[i].addEventListener("click", function () {
-            var current = document.getElementsByClassName("active");
-            current[0].className = current[0].className.replace(" active", "");
-            this.className += " active";
-        });
-    }
-    //]]>
-</script>
+
 <div style="clear:both;"></div>
 
 <body style="background: #000;
@@ -782,7 +767,7 @@
                         class="fa-solid fa-gift"></i></span></a>
             <a href="/"><span
                     style="background:#222;border-radius:50px;padding:6px 9px 3px;color:#fff;float:left;font-size:17px;margin-left:20px;margin-top:13px"><i
-                        class="fa-solid fa-circle"></i> MISTAR TV</span></a>
+                        class="fa-solid fa-circle"></i> RIMBA TV</span></a>
         </div>
 
 
@@ -805,7 +790,7 @@
                                     <marquee scrolldelay="100" onmouseover="this.stop()" onmouseout="this.start()">
                                         <span style="color: black; font-size: 13px; font-weight: 400;"><span
                                                 color="black"><b>AGAR TIDAK
-                                                    KETINGGALAN EVENT - EVENT MENARIK DI MISTAR TV JANGAN LUPA JOIN GRUP
+                                                    KETINGGALAN EVENT - EVENT MENARIK DI RIMBA TV JANGAN LUPA JOIN GRUP
                                                     TELEGRAM &#10687;
                                                     PASTIKAN KONEKSI INTERNET ANDA STABIL ! DISARANKAN UNTUK MENGUNAKAN
                                                     BROWSER GOOGLE CHROME / UC
@@ -910,7 +895,22 @@
 
 
                    <script src="https://sheetdb.io/handlebars.js"></script>
-
+<script>
+    //<![CDATA[
+    function go(loc) {
+        document.getElementById('tv').src = loc;
+    };
+    var btnContainer = document.getElementById("serverid");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+        });
+    }
+    //]]>
+</script>
                     <br>
 
 
