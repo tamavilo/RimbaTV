@@ -744,7 +744,7 @@
         window.history.replaceState({}, document.title, clean_uri);
     }
 </script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js'></script>
+
 
 
 <div style="clear:both;"></div>
@@ -774,7 +774,7 @@
         <div class="outer" style="padding: 0px;">
 
             <div class="ratio ratio-16x9" >
-               <iframe id="tv" src="https://tamavilo.github.io/player/" style="border: none; position: absolute; top: 0; left: 0; height: 100%; width: 100%;" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;allow-forms allow-pointer-lock allow-same-origin-allow-popups-allow-scripts allow-top-navigation;" allowfullscreen="true" scrolling="no"></iframe>
+               <iframe id="iframe" src="https://tamavilo.github.io/player/" style="border: none; position: absolute; top: 0; left: 0; height: 100%; width: 100%;" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;allow-forms allow-pointer-lock allow-same-origin-allow-popups-allow-scripts allow-top-navigation;" allowfullscreen="true" scrolling="no"></iframe>
             </div>
 
             <div class="jalan">
@@ -863,11 +863,11 @@
 
                        <div data-sheetdb-url="https://sheetdb.io/api/v1/o4g2l4va2yu5c">
 
-                            <a onclick="go('{{link}}');">
+                            <a style="cursor:pointer" OnClick="go('{{link}}');">
 
                                 <div class="kotak">
                                     <div class="jam">
-                                        <div bold="" class="item-timer"></div>
+                                        <div class="item-timer"></div>
                                        {{jam}} WIB
                                         <br>
                                     </div>
@@ -895,9 +895,9 @@
 
 
                    <script src="https://sheetdb.io/handlebars.js"></script>
+                        <script src='https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js'></script>
 <script>
-    //<![CDATA[
-    function go(loc) {  document.getElementById('tv').src = loc;
+    function go(loc) {  document.getElementById("iframe").src = loc;
   };
   var btnContainer = document.getElementById("serverid");
   var btns = btnContainer.getElementsByClassName("btn");
@@ -908,7 +908,6 @@
       this.className += " active";
     });
   }
-    //]]>
 </script>
                     <br>
 
