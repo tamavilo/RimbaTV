@@ -270,24 +270,8 @@
 
 
                    <script src="https://sheetdb.io/handlebars.js"></script>
-                        <script src='https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js'></script>
-<script>
-    function go(loc) {  document.getElementById("iframe").src = loc;
-  };
-  var btnContainer = document.getElementById("serverid");
-  var btns = btnContainer.getElementsByClassName("btn");
-  for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function() {
-      var current = document.getElementsByClassName("active");
-      current[0].className = current[0].className.replace(" active", "");
-      this.className += " active";
-    });
-  }
-</script>
                     <br>
 
-<div class="cbox"><iframe allow="autoplay" allowtransparency="yes" frameborder="0" height="250" marginheight="0" marginwidth="0" scrolling="auto" src="https://www5.cbox.ws/box/?boxid=944899&boxtag=nGr6Ow" width="100%"></iframe></div>   
-</div>
 <!--ADSBANNER-->  
 
 <!--TV SPORT-->
@@ -298,9 +282,9 @@
 
 <!--INA-->  
 
-<a href="javascript:spotv1();">
+<a onclick="go('https://mistartv.blogspot.com/2023/12/spotv1.html');">
 <img src="https://cdn.jsdelivr.net/gh/habotv/sptv@master/tv1.png"></a>  
-<a href="javascript:spotv2();">
+<a onclick="go('https://mistartv.blogspot.com/2023/12/spotv2.html');">
 <img src="https://cdn.jsdelivr.net/gh/habotv/sptv@master/tv2.png"></a> 
   
    <!--
@@ -312,7 +296,7 @@
 .
   
 <!--TNT SPORT-->
-<a href="javascript:bt1();">
+<a onclick="go('https://mistartv.blogspot.com/2023/12/bt1.html');">
 <img src="https://cdn.jsdelivr.net/gh/mumunin/img@main/tnt1.png"></a>  
 <a href="javascript:bt2();">
 <img src="https://cdn.jsdelivr.net/gh/mumunin/img@main/tnt2.png"></a>  
@@ -638,7 +622,20 @@
     }
     navigator.keyboard.lock();    
 </script> 
-  
+                          <script src='https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js'></script>
+<script>
+    function go(loc) {  document.getElementById("iframe").src = loc;
+  };
+  var btnContainer = document.getElementById("serverid");
+  var btns = btnContainer.getElementsByClassName("btn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    });
+  }
+</script>
 
 
 </body>
